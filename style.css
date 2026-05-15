@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f4f8; /* Soft Mist Grey/White */
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#entrance {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Soft Blue to Pinkish White gradient for aesthetic vibe */
+    background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 50%, #f0f9ff 100%);
+    transition: all 1s ease-in-out;
+}
+
+.aesthetic-box {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 50px 30px;
+    border-radius: 50px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.soft-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #64748b;
+    letter-spacing: 1px;
+}
+
+.soft-title span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #0ea5e9; /* Soft Sky Blue */
+    display: block;
+    margin-top: 10px;
+}
+
+.divider {
+    width: 40px;
+    height: 2px;
+    background: #bae6fd;
+    margin: 25px auto;
+    border-radius: 10px;
+}
+
+.deep-msg {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 35px;
+}
+
+#reveal-btn {
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 15px 35px;
+    color: #0ea5e9;
+    font-weight: 500;
+    border-radius: 100px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+}
+
+#reveal-btn:hover {
+    background: #0ea5e9;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(14, 165, 233, 0.2);
+}
+
+#video-stage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 999;
+}
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hidden { display: none; }
